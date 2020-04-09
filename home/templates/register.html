@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+	<div class="row box2" style="margin-top:100px;margin-left:100px">
+	
+		<div class="col-md-5 box1">
+	
+		<center><h1 style="font-family:bold;margin-bottom:50px;margin-left: -100px;color:black;">CREATE AN ACCOUNT</h1></center>
+		<br>
+	
+		<form action="register" method="POST">
+		
+		{% csrf_token %}
+	
+		<label for="username"><b style="font-family:bold; color:grey;">User Name</b></label>
+		<input  type="text" style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" class="form-control" placeholder="  Enter Your Name" name="username" required><br><br>
+	
+		<label for="email"><b style="font-family:bold; color:grey;">Email</b></label>
+		<input style="width:350px;margin-left:105px;margin-top:-40px;" class="form-control" aria-describedby="button-addon2" type="email" placeholder="  Enter Email" name="email" required><br><br>
+	
+		<label for="psw"><b style="font-family:bold; color:grey;">Password</b></label>
+		<input type="password" placeholder="  Enter Password" name="psw" type="text" class="form-control" style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" required><br><br>
+	
+		<label for="psw2"><b style="font-family:bold; color:grey;margin-left:-40px;">Confirm Password</b></label>
+		<input  style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" class="form-control" type="password" placeholder="  Confirm Password" name="psw2" required><br><br>
+		
+		<label for="contact"><b style="font-family:bold; color:grey;">Contact</b></label>
+		<input class="form-control" placeholder="  Enter Contact" name="contact" type="text" style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" required><br><br>
+	
+		<center><input class="btn btn1" type="submit"></input></center>
+	
+		</form>
+	
+	</div>
+	
+		<div class="col-md-5" style="margin-top:70px; margin-left:40px">
+			
+			<h3 style="color:black; font-family:bold">NEW CUSTOMER</h3>
+			<p style="color:grey; margin-top:50px">By creating an account with our store, you will be able to move through<br>the checkout process faster, store multiple shipping addresses, view and <br> track your orders in your account and more</p>
+	
+		</div>
+	
+	</div>
+	
+	<div>
+			<div class="col-md-12" style="margin-top: 60px;">
+	
+				{% for message in messages %}	
+				<center><h4 style="color:red;">{{message}}</h4></center>
+				{% endfor %}
+	
+			</div>
+	
+	</div>
+	
+{% endblock %}

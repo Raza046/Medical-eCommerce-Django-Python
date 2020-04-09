@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+
+<div class="bg-light py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-0">
+          <a href="home">Home</a> <span class="mx-2 mb-0">/</span>
+          <strong class="text-black">Contact</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="h3 mb-5 text-black">Get In Touch</h2>
+        </div>
+        <div class="col-md-12">
+  
+          <form action="#" method="post">
+  
+            <div class="p-3 p-lg-5 border">
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_fname" name="c_fname">
+                </div>
+                <div class="col-md-6">
+                  <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_lname" name="c_lname">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_subject" class="text-black">Subject </label>
+                  <input type="text" class="form-control" id="c_subject" name="c_subject">
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_message" class="text-black">Message </label>
+                  <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+        <div style="margin-bottom: 0px; margin-left: 70%;">
+          <center>
+          <iframe
+            id="bot"
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/da496910-c4b2-4eb8-9289-8cf5a5dc57cb">
+          </iframe>
+          </center>
+        </div>
+
+  <div class="site-section bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-white mb-4">Offices</h2>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="d-block text-black h6 text-uppercase">New York</span>
+            <p class="mb-0"> 9538 NE. Oak Valley Dr. 
+         North Tonawanda, NY 14120F, USA</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="d-block text-black h6 text-uppercase">JAUHAR</span>
+            <p class="mb-0">RAZA_MAJA(HOUSE), San Francisco, California, PAKISTAN</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white mb-3 rounded">
+            <span class="d-block text-black h6 text-uppercase">Canada</span>
+            <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+          <div class="block-7">
+            <h3 class="footer-heading mb-4">About Us</h3>
+            <p>MEDICO is here to make a difference.MEDICO Pharmacy & Wellness Experts is a modern pharmacy concept where medicines are sold following the best standards. Here, we assure that everything our customers buy is 100% authentic.Availability of medicines at MEDICO is never an issue because here our customers can find medicines for every disease.</p>
+          </div>
+
+        </div>
+        <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+          <h3 class="footer-heading mb-4">Quick Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Supplements</a></li>
+            <li><a href="#">Vitamins</a></li>
+            <li><a href="#">Diet &amp; Nutrition</a></li>
+            <li><a href="#">Tea &amp; Coffee</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="block-5 mb-5">
+            <h3 class="footer-heading mb-4">Contact Info</h3>
+            <ul class="list-unstyled">
+              <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+              <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+              <li class="email">emailaddress@domain.com</li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

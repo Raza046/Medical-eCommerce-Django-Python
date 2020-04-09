@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+
+<div class="row box2" style="padding:40px;">
+
+	<div class="col-md-5 box1">
+
+	<center><h1 style="font-family:bold;color:black;margin-bottom:50px">LOG IN</h1></center>
+	<br>
+
+    <form action="login" method="POST">
+    
+    {% csrf_token %}
+
+    <label for="username"><b style="font-family:bold;color:grey;">User Name</b></label>
+	<input  type="text" style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" class="form-control" placeholder="  Enter Your Name" name="username" required><br><br>
+
+
+    <label for="psw"><b style="font-family:bold; color:grey;">Password</b></label>
+    <input type="password" style="width:350px;margin-left:105px;margin-top:-40px;" aria-describedby="button-addon2" class="form-control" placeholder="  Enter Password" name="psw" style="margin-left:75px" required><br><br>
+
+	<center><input class="btn btn1" type="submit"></input></center>
+
+    </form>
+
+</div>
+
+	<div class="col-md-5" style="margin-top:70px; margin-left:40px">
+		
+		<h3 style="color:black; font-family:bold"><b>NEW CUSTOMER</b></h3>
+		<p style="color:grey; margin-top:50px">By creating an account with our store, you will be able to move through<br>the checkout process faster, store multiple shipping addresses, view and <br> track your orders in your account and more</p>
+
+	</div>
+
+
+</div>
+
+<div>
+		<div class="col-md-12" style="margin-top: 60px;">
+
+			{% for message in messages %}	
+			<center><h4 style="color:red;">{{message}}</h4></center>
+			{% endfor %}
+
+		</div>
+
+
+</div>
+
+{% endblock %}
+

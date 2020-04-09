@@ -1,0 +1,392 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MEDICO &copy;</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}" >
+
+  <link rel="stylesheet" href="{% static  'bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static  'owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'aos.css' %}">
+
+  <link rel="stylesheet" href="{% static  'style.css' %}">
+
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+
+    <div class="site-navbar py-2">
+
+      <div class="search-wrap">
+        <div class="container">
+          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="home" class="js-logo-clone">MEDICO</a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="active"><a href="home">Home</a></li>
+                <li><a href="medicine">Store</a></li>
+                <li class="has-children">
+                  <a href="#">Dropdown</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Supplements</a></li>
+                    <li class="has-children">
+                      <a href="#">Vitamins</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Supplements</a></li>
+                        <li><a href="#">Vitamins</a></li>
+                        <li><a href="#">Diet &amp; Nutrition</a></li>
+                        <li><a href="#">Tea &amp; Coffee</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Diet &amp; Nutrition</a></li>
+                    <li><a href="#">Tea &amp; Coffee</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+
+                {% if user.is_authenticated %}
+
+                <li>Hello Mr.{{user.username}}</li>
+                <li><a href="logout">Logout</a></li>
+
+                {% else %}
+                <li><a href="login">Login</a></li>
+                <li><a href="register">Register</a></li>
+                {% endif %}
+
+
+              </ul>
+            </nav>
+          </div>
+          {% if user.is_authenticated %}
+
+          <div class="icons">
+            <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+            <a href="cart" class="icons-btn d-inline-block bag">
+              <span class="icon-shopping-bag">Cart</span>
+              <span class="number">2</span>
+            </a>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                class="icon-menu"></span></a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover" style="background-image: url('{% static 'hero_1.jpg' %}');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto order-lg-2 align-self-center">
+            <div class="site-block-cover-content text-center">
+              <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
+              <h1>Welcome To MEDICO</h1>
+              <p>
+                <a href="medicine" class="btn btn-primary px-5 py-3">Shop Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row align-items-stretch section-overlap">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="banner-wrap bg-primary h-100">
+              <a href="#" class="h-100">
+                <h5>Free <br> Shipping</h5>
+                <p>
+                  
+                  <strong>ALL OVER PAKISTAN.</strong>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="banner-wrap h-100">
+              <a href="#" class="h-100">
+                <h5>Season <br> Sale 50% Off</h5>
+                <p>
+                
+                  <strong>ON ENTIRE MONTH.</strong>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="banner-wrap bg-warning h-100">
+              <a href="#" class="h-100">
+                <h5>Buy <br> A Gift Card</h5>
+                <p>
+                  <strong>CAN AVAIL DISCOUNT BY USING GIFT CARD.</strong>
+                </p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center col-12">
+            <h2 class="text-uppercase">Popular Products</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+
+            <a href="medicine"> <img src=" {%  static 'product_04.png' %}" alt="Image"></a>
+            <h3 class="text-dark"><a href="medicine">Cetyl Pure</a></h3>
+            <p class="price"><del>45.00</del> &mdash; $20.00</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <a href="medicine"> <img src=" {%  static 'product_05.png' %}" alt="Image"></a>
+            <h3 class="text-dark"><a href="medicine">CLA Core</a></h3>
+            <p class="price">$38.00</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 text-center item mb-4">
+            <span class="tag">Sale</span>
+            <a href="medicine"> <img src=" {%  static 'product_06.png' %}" alt="Image"></a>
+            <h3 class="text-dark"><a href="medicine">Poo Pourri</a></h3>
+            <p class="price"><del>$89</del> &mdash; $38.00</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <a href="medicine" class="btn btn-primary px-4 py-3">View All Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center col-12">
+            <h2 class="text-uppercase">New Products</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-3 products-wrap">
+            <div class="nonloop-block-3 owl-carousel">
+
+              <div class="text-center item mb-4">
+                <a href="medicine"> <img src=" {%  static 'product_03.png' %}" alt="Image"></a>
+                <h3 class="text-dark"><a href="medicine">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4">
+                <a href="medicine"> <img src=" {%  static 'product_01.png' %}" alt="Image"></a>
+                <h3 class="text-dark"><a href="medicine">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4">
+                <a href="medicine"> <img src=" {%  static 'product_02.png' %}" alt="Image"></a>
+                <h3 class="text-dark"><a href="medicine">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+              <div class="text-center item mb-4">
+                <a href="medicine"> <img src=" {%  static 'product_04.png' %}" alt="Image"></a>
+                <h3 class="text-dark"><a href="medicine">Umcka Cold Care</a></h3>
+                <p class="price">$120.00</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center col-12">
+            <h2 class="text-uppercase">Testimonials</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-3 products-wrap">
+            <div class="nonloop-block-3 no-direction owl-carousel">
+        
+              <div class="testimony">
+                <blockquote>
+                  <img src="{%  static 'person_1.jpg' %}"  alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>&ldquo;“There is no other place in medicine where I am allowed unlimited time to work with patients. To really listen to them, to speak with their families. This is why I went into medicine. Advance Medical gives me this opportunity.”
+
+       Heather Towery, MD
+       Medical Director, Advance Medical.&rdquo;</p>
+                </blockquote>
+
+                <p>&mdash; Heather Towery</p>
+              </div>
+        
+              <div class="testimony">
+                <blockquote>
+                  <img src="{%  static 'person_2.jpg' %}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>&ldquo;“Advance Medical is an important tool for patients/employees who want a better understanding of their illnesses and the corresponding management/treatment. As Case Physician managers, we are here to guide the patients on what specific questions to ask about their medical problems as well as to help them make an informed decision when it comes to their health.”
+
+Kristofferson Lee, MD
+Physician Case Manager, Advance Medical
+                    .&rdquo;</p>
+                </blockquote>
+              
+                <p>&mdash; Kristofferson Lee</p>
+              </div>
+        
+              <div class="testimony">
+                <blockquote>
+                  <img src="{%  static 'person_3.jpg' %}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>&ldquo;“Advance Medical affords patients and their loved ones an opportunity to receive a patient-centric evidence-based opinion, which is empowering in the shared decision making process.”
+
+Wilfred Mamuya, MD, PhD
+Clinical Associate Professor, Division of Cardiology, Harvard Medical School, Boston, MA
+                    .&rdquo;</p>
+                </blockquote>
+              
+                <p>&mdash; Lucas Gallone</p>
+              </div>
+        
+              <div class="testimony">
+                <blockquote>
+                  <img src="{%  static 'person_4.jpg' %}" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
+                  <p>&ldquo;“When you have concerns about your diagnosis, your prognosis, or the range of treatment options available to you — that is the time to ask for more information. An Expert Medical Opinion provides checks and balances of all the medical information that impacts your care.”
+
+Theodore Steinman, MD
+Clinical Professor of Medicine,  Harvard Medical School,  Boston, MA
+                    .&rdquo;</p>
+                </blockquote>
+              
+                <p>&mdash; Theodore Steinma</p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-secondary bg-image" style="background-image: url({% static 'bg_2.jpg' %});">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url({% static 'bg_1.jpg' %});">
+              <div class="banner-1-inner align-self-center">
+                <h2>MEDICO PRODUCTS</h2>
+                <p>WE DELIVERY  BEST QUALITY PRODUCT ACROSS ALL OVER THE PAKISTAN.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a href="#" class="banner-1 h-100 d-flex" style="background-image: url({% static 'bg_2.jpg' %});">
+              <div class="banner-1-inner ml-auto  align-self-center">
+                <h2>DOCTOR-TO-PATIENT & PATIENT-TO-DOCTOR </h2>
+                <p>is a sore throat contagious?A sore throat often accompanies a cold or the flu,and has symptoms like mild fever,swollen lymph nodes and tonsils,and difficulty speaking or swallowing food due to throat pain.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4">About Us</h3>
+              <p>MEDICO is here to make a difference.MEDICO Pharmacy & Wellness Experts is a modern pharmacy concept where medicines are sold following the best standards. Here, we assure that everything our customers buy is 100% authentic.Availability of medicines at MEDICO is never an issue because here our customers can find medicines for every disease.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Supplements</a></li>
+              <li><a href="#">Vitamins</a></li>
+              <li><a href="#">Diet &amp; Nutrition</a></li>
+              <li><a href="#">Tea &amp; Coffee</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                <li class="email">emailaddress@domain.com</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+          
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  {% block extrascripts %}
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}  
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MEDICO &copy;</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="{% static  'bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static  'owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'owl.theme.default.min.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'aos.css' %}">
+
+  <link rel="stylesheet" href="{% static  'style.css' %}">
+
+
+</head>
+
+<body>
+
+
+    <div class="site-wrap">
+
+
+        <div class="site-navbar py-2">
+    
+          <div class="search-wrap">
+            <div class="container">
+              <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+              <form action="#" method="post">
+                <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+              </form>
+            </div>
+          </div>
+    
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="logo">
+                <div class="site-logo">
+                  <a href="home" class="js-logo-clone">MEDICO</a>
+                </div>
+              </div>
+              <div class="main-nav d-none d-lg-block">
+                <nav class="site-navigation text-right text-md-center" role="navigation">
+                  <ul class="site-menu js-clone-nav d-none d-lg-block">
+                    <li><a href="home">Home</a></li>
+                    <li class="active"><a href="medicine">Store</a></li>
+                    <li class="has-children">
+                      <a href="#">Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Supplements</a></li>
+                        <li class="has-children">
+                          <a href="#">Vitamins</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Supplements</a></li>
+                            <li><a href="#">Vitamins</a></li>
+                            <li><a href="#">Diet &amp; Nutrition</a></li>
+                            <li><a href="#">Tea &amp; Coffee</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Diet &amp; Nutrition</a></li>
+                        <li><a href="#">Tea &amp; Coffee</a></li>
+    
+                      </ul>
+                    </li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="icons">
+                <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
+                <a href='{% url "cart" %}' class="icons-btn d-inline-block bag">
+                  <span class="icon-shopping-bag"></span>
+                  <span class="number">2</span>
+                </a>
+                <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+                    class="icon-menu"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    <div class="site-blocks-cover inner-page" style="background-image: url( {% static 'hero_1.jpg' %})">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto align-self-center">
+            <div class=" text-center">
+              <h1>About Us</h1>
+              <p>MEDICO is here to make a difference.MEDICO Pharmacy & Wellness Experts is a modern pharmacy concept where medicines are sold following the best standards. Here, we assure that everything our customers buy is 100% authentic.Availability of medicines at MEDICO is never an issue because here our customers can find medicines for every disease.
+We consider medicine handling a very crucial factor for human lives so all the medicines are transported and stored under controlled temperatures. Without compromising on quality, MEDICO sells medicines at affordable and market competitive prices so that the authentic medicines stay in reach of everyone. Last but not the least, we have qualified pharmacists on-board for the best possible guidance.  MEDICO aspires to change the pharmacy landscape of Pakistan..</p>ˀ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light custom-border-bottom" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <div class="block-16">
+              <figure>
+                <img src="{% static 'bg_1.jpg' %}" alt="Image placeholder" class="img-fluid rounded">
+                <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span
+                    class="icon-play"></span></a>
+    
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+    
+    
+            <div class="site-section-heading pt-3 mb-4">
+              <h2 class="text-black">How We Started</h2>
+            </div>
+            <p>YEHAN PI KUXH LIHK DO TM LG.</p>
+            <p></p>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="site-section bg-light custom-border-bottom" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 order-md-2">
+            <div class="block-16">
+              <figure>
+                <img src="{% static 'hero_1.jpg' %}" alt="Image placeholder" class="img-fluid rounded">
+                <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span
+                    class="icon-play"></span></a>
+    
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-5 mr-auto">
+    
+    
+            <div class="site-section-heading pt-3 mb-4">
+              <h2 class="text-black">WE ARE TRUSTED COMPANY</h2>
+            </div>
+            <p class="text-black">“We strive to earn the trust and confidence of our customers and are grateful for this recognition of our efforts by the Head Of Medicine Institute,” said CEO/CO-FOUNDER,MAAZ UL HAQ.</p>
+            <p class="text-black">.</p>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section site-section-sm site-blocks-1 border-0" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-truck text-primary"></span>
+            </div>
+            <div class="text">
+              <h2>FREE SHIPPING</h2>
+              <p>FREE DELIVERY ALL OVER THE PAKISTAN.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-refresh2 text-primary"></span>
+            </div>
+            <div class="text">
+              <h2>RETURN POLICY</h2>
+              <p>Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.
+
+To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.
+
+Several types of goods are exempt from being returned. Perishable goods such as food, flowers, newspapers or magazines cannot be returned. We also do not accept products that are intimate or sanitary goods, hazardous materials, or flammable liquids or gases.
+
+Additional non-returnable items:
+
+Gift cards
+Downloadable software products
+Some health and personal care items
+To complete your return, we require a receipt or proof of purchase.
+
+Please do not send your purchase back to the manufacturer.
+
+There are certain situations where only partial refunds are granted (if applicable)
+
+Book with obvious signs of use
+CD, DVD, VHS tape, software, video game, cassette tape, or vinyl record that has been opened
+Any item not in its original condition, is damaged or missing parts for reasons not due to our error
+Any item that is returned more than 30 days after delivery.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon mr-4 align-self-start">
+              <span class="icon-help text-primary"></span>
+            </div>
+            <div class="text">
+              <h2>CUSTOMER SUPPORT</h2>
+              <p>Providing good customer service is a vital part of our services. Most customers have the option to go elsewhere if the quality of customer service is lacking. On the other hand, good customer service is a source of competitive advantage.
+
+Good customer service leads to customer satisfaction. Satisfied customers are more loyal and profitable. Dissatisfied customers take their money elsewhere – and tell their friends about the poor service they have received..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="site-section bg-light custom-border-bottom" data-aos="fade">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 site-section-heading text-center pt-4">
+            <h2>The Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-5">
+            <div class="block-38 text-center">
+              <div class="block-38-img">
+                <div class="block-38-header">
+                  <img src="{% static 'pp1.jpg' %}" alt="Image placeholder" class="mb-4">
+                  <h3 class="block-38-heading h4">MAAZ UL HAQ</h3>
+                  <p class="block-38-subheading">CEO/Co-Founder</p>
+                </div>
+                <div class="block-38-body">
+                  <p>"We began with the broad idea of using the prosperity we had been blessed with to aid those less fortunate than ourselves. However, we soon saw the need for a more focused approach in our philanthropic work. Today’s world has an endless number of compelling social issues, and without a concentrated effort, our impact would be diluted. We needed a clear focus in order to get the most out of our resources."
+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5">
+            <div class="block-38 text-center">
+              <div class="block-38-img">
+                <div class="block-38-header">
+                  <img src="{% static 'RAZA.jpg' %}" alt="Image placeholder" class="mb-4">
+                  <h3 class="block-38-heading h4">RAZA UL MUSTAFA</h3>
+                  <p class="block-38-subheading">Co-Founder</p>
+                </div>
+                <div class="block-38-body">
+                  <p>MEDICO  is always with its customers in their lives as a trustworthy partner that provides a variety of products. We at Medico will try our best to make the lives of our customers more comfortable and prosperous. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-5" id="centerasim">
+            <div class="block-38 text-center">
+              <div class="block-38-img">
+                <div class="block-38-header">
+                  <img src="{% static 'asim.jpg' %}" alt="Image placeholder" class="mb-4">
+                  <h3 class="block-38-heading h4">ASIM AHMED</h3>
+                  <p class="block-38-subheading">Marketing</p>
+                </div>
+                <div class="block-38-body">
+                  <p>Our strongest form of communication is behavior that's consistent with our vision for leadership. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4">ABOUT US</h3>
+              <p>MEDICO is here to make a difference.MEDICO Pharmacy & Wellness Experts is a modern pharmacy concept where medicines are sold following the best standards. Here, we assure that everything our customers buy is 100% authentic.Availability of medicines at MEDICO is never an issue because here our customers can find medicines for every disease..</p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Supplements</a></li>
+              <li><a href="#">Vitamins</a></li>
+              <li><a href="#">Diet &amp; Nutrition</a></li>
+              <li><a href="#">Tea &amp; Coffee</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                <li class="email">emailaddress@domain.com</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

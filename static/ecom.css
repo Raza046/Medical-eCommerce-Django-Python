@@ -1,0 +1,182 @@
+	
+.fa-facebook {
+  background:#3B5998;
+  color: white;
+}
+
+.fa-facebook:hover{
+  background: white;
+  color:#3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-twitter:hover{
+  background:white;
+  color:#55ACEE;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-pinterest:hover{
+  background:white;
+  color:#cb2027;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-skype:hover{
+  background:white;
+  color:#00aff0;
+}
+
+.style1{
+
+position: fixed;
+background-color:white;
+padding-right:153px;
+}
+
+
+.btnStyle{
+
+font-family:courier;
+color:black;
+}
+
+.btnStyle:hover{
+background-color:black;
+color:white;
+}
+
+.btnStyle1{
+
+font-family: bold;
+color: black;
+margin-left:460px;
+border-radius:10px;
+margin-top: 50px;
+width: 190px;
+}
+
+.btnStyle1:hover{
+
+background-color:black;
+color:white;
+border-radius:4px;	
+}
+
+
+.btnStyle2{
+
+	color:black; 
+	font-family:Impact;
+	font-size:45px;
+	margin-left:600px;
+	margin-bottom:20px;
+	padding-top:20px;
+}
+
+.foot1{
+
+	background-color: black; 
+	padding-top: 120px; 
+	padding-bottom: 150px; 
+	color: white;
+}
+
+.foot2{
+	color: grey;
+	margin-left:40px;
+	font-size:13px;
+}
+
+.foot2:hover{
+	color: hotpink;
+}
+
+.fa1{
+	 
+	 font-size:20px;
+	 padding:15px;
+	 border-radius:10px;
+}
+
+.cart1{
+
+color:black;	
+background-color:#F0EFEF; 
+border-radius:20px;
+border-width:0px;
+margin-left: 220px;
+}
+
+.cart1:hover{
+
+color: white;
+background-color:black;
+
+}
+
+
+.img1:hover{
+
+animation: imgs 2s;
+}
+
+
+@keyframes imgs{
+
+from{
+
+	transform: scale(1);
+}
+	
+to{
+
+	transform: scale(1.05);	
+}	
+
+}
+
+.fade-In{
+
+animation: fadeIn 3s;
+}
+
+.fade-In{
+
+animation: fadeIn 3s;
+}
+
+
+@keyframes fadeIn{
+	from {
+		opacity:0;
+		left:-600px;
+	}
+	to{
+		opacity:1;
+		left:0px;
+	}
+}
+
+@keyframes fadeIn1{
+	from {
+		opacity:0;
+		left:600px;
+	}
+	to{
+		opacity:1;
+		left:0px;
+	}
+}
