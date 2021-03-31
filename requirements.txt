@@ -41,7 +41,7 @@ idna==2.8
 incremental==17.5.0
 jsmin==2.2.2
 linkedin-scraper==2.4.3
-lxml==4.5.0
+lxml==4.6.3
 mysqlclient==1.4.4
 numpy==1.18.2
 oauthlib==3.1.0
