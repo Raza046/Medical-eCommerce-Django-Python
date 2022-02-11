@@ -81,7 +81,7 @@ South==1.0.2
 sqlparse==0.3.0
 static3==0.7.0
 stripe==2.44.0
-Twisted==19.10.0
+Twisted==22.1.0
 txaio==20.1.1
 ua-parser==0.10.0
 urllib3==1.25.8
