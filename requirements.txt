@@ -43,7 +43,7 @@ jsmin==2.2.2
 linkedin-scraper==2.4.3
 lxml==4.5.0
 mysqlclient==1.4.4
-numpy==1.18.2
+numpy==1.22.0
 oauthlib==3.1.0
 package-name==0.1
 pandas==1.0.3
