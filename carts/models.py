@@ -7,8 +7,8 @@ from products.models import Products
 class CartItems(models.Model):
 
 
-    user = models.ForeignKey(User,on_delete="CASCADE",null=True)
-    prod = models.ForeignKey(Products,on_delete="CASCADE",null=True,blank=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
+    prod = models.ForeignKey(Products,on_delete=models.CASCADE,null=True,blank=True)
     quantity = models.IntegerField(default=1)
     total = models.DecimalField(max_digits=100,decimal_places=2,default=0.00)
     timestamp= models.DateTimeField(auto_now_add=True,auto_now=False)
@@ -18,7 +18,7 @@ class CartItems(models.Model):
 
 class myCart(models.Model):
 
-    user = models.ForeignKey(User,on_delete="CASCADE",null=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE,null=True)
     items = models.ManyToManyField(CartItems,null=True,blank=True)
     prod = models.ManyToManyField(Products,null=True, blank=True)
     timestamp= models.DateTimeField(auto_now_add=True,auto_now=False)

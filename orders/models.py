@@ -19,8 +19,8 @@ country_choices = {
 class Order(models.Model):
 
 
-    user = models.ForeignKey(User,on_delete="CASCADE")
-    cart = models.OneToOneField(myCart,on_delete="CASCADE",null=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    cart = models.OneToOneField(myCart,on_delete=models.CASCADE,null=True)
     fname = models.CharField(max_length=100, null=True)
     lname = models.CharField(max_length=100,null=True)
     email = models.EmailField(max_length=50,null=True)
