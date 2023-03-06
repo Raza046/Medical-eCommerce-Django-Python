@@ -1,7 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect, Http404,redirect
 from django.shortcuts import get_list_or_404, get_object_or_404
 from django.core.mail import send_mail
-from django.conf.urls import url
 from django.conf import settings
 from django.forms.models import modelformset_factory
 from django.core.exceptions import ObjectDoesNotExist

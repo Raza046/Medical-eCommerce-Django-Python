@@ -14,8 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.conf.urls import url
+from django.urls import path, re_path
 from django.conf import settings
 from home import views
 from products.api import ProductView
@@ -36,9 +35,9 @@ urlpatterns = [
     path('contact',views.Contact,name='contact'),
     path('checkout',views.Checkout,name='checkout'),
     path('thankyou',views.Thankyou,name='thankyou'),
-    url(r'^productsapi/$',ProductView.as_view(), name='PView' ),
-    url( r'^removeCart/(?P<slug>[\w-]+)',views.RemoveCart, name="RemoveCart"),
-    url( r'^cart/(?P<slug>[\w-]+)',views.UpdateCart, name="updateCart"),
-    url( r'^(?P<slug>[\w-]+)',views.MedDescription, name="MedDescription"),
+    re_path(r'^productsapi/$',ProductView.as_view(), name='PView' ),
+    re_path( r'^removeCart/(?P<slug>[\w-]+)',views.RemoveCart, name="RemoveCart"),
+    re_path( r'^cart/(?P<slug>[\w-]+)',views.UpdateCart, name="updateCart"),
+    re_path( r'^(?P<slug>[\w-]+)',views.MedDescription, name="MedDescription"),
 
 ]
